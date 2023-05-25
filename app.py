@@ -25,9 +25,8 @@ from langchain.vectorstores import FAISS
 from langdetect import detect
 
 import streamlit as st
-openai_api_key = st.secrets['openai']['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']
+openai_api_key = st.secrets['API_KEY']
 # Use the API key in your Streamlit app
-st.write("OpenAI API Key:", openai_api_key)
 
 
 logger = logging.getLogger("chatbot_logger")
