@@ -24,6 +24,17 @@ from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
 from langdetect import detect
 
+import streamlit as st
+import os
+
+# Set the environment variable
+os.environ['OPENAI_API_KEY'] = "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"
+
+# Access the environment variable
+api_key = os.getenv('OPENAI_API_KEY')
+
+# Use the environment variable in your Streamlit app
+st.write("OpenAI API Key:", api_key)
 
 # from langchain.callbacks import get_openai_callback
 
@@ -37,10 +48,7 @@ handler.setLevel(logging.INFO)
 logger.addHandler(handler)
 logger.setLevel(logging.INFO)
 
-os.environ['OPENAI_API_KEY'] = "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"
 
-app = Flask(__name__)
-app.secret_key = 'cac15d9e-f7e5-11ed-b67e-0242ac120002'
 
 
 class StageAnalyzerChain(LLMChain):
