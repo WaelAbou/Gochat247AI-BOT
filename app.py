@@ -28,7 +28,7 @@ import streamlit as st
 import os
 
 # Set the environment variable
-os.environ['OPENAI_API_KEY'] = "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"
+os.environ['OPENAI_API_KEY'] = "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"
 
 # Access the environment variable
 api_key = os.getenv('OPENAI_API_KEY')
