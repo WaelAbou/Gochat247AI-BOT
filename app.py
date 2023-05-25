@@ -321,16 +321,6 @@ def handle_conversation(data):
     else:
         return jsonify({"error": "Invalid input"}), 400
 
-@app.route('/webhook', methods=['POST'])
-def chatbot_api():
-   # recieving user input and chat id
-    data = request.get_json()
-    result = handle_conversation(data,)
-    t = threading.Thread(target=handle_conversation, args=(data,))
-    t.start()
-    print(result)
-    return result
-
 
 
 
