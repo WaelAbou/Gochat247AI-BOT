@@ -259,7 +259,7 @@ config = dict(
 # loader_en = TextLoader('/Users/Mohamed/Desktop/Gochat247/Gochat_GPT/final_V103/1.txt')
 # loader_ar = TextLoader('/Users/Mohamed/Desktop/Gochat247/Gochat_GPT/final_V103/ar.txt')
 
-loader = TextLoader('/content/drive/MyDrive/final.txt')
+loader = TextLoader('knowldge_base.txt')
 # loader = TextLoader('/home/ubuntu/apiapp/100.txt')
 
 
