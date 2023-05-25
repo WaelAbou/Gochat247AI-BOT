@@ -25,7 +25,7 @@ from langchain.vectorstores import FAISS
 from langdetect import detect
 
 import streamlit as st
-openai_api_key = st.secrets['API_KEY']
+os.environ['OPENAI_API_KEY'] = st.secrets['API_KEY']
 # Use the API key in your Streamlit app
 
 
