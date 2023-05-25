@@ -1,0 +1,6 @@
+langchain
+flask
+openai
+langdetect
+tiktoken
+faiss-cpu
